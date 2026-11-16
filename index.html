@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home Maintenance &amp; Handyman | Fairfax &amp; Loudoun | Out of Ideas</title>
+<meta name="description" content="Handyman and home maintenance in Herndon, Reston, Sterling and Ashburn. $95/hr, 2-hour minimum, seasonal and monthly maintenance plans. See our before-and-after work.">
+<meta property="og:title" content="Out of Ideas Home: Maintenance &amp; Handyman">
+<meta property="og:description" content="The small jobs on your list, handled in one visit. Serving Fairfax and Loudoun Counties.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://home.outofideas.org/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231F4D3A'/%3E%3Cpath d='M7 16 16 8l9 8v9H7z' fill='none' stroke='%23fff' stroke-width='2.5' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --green:#1F4D3A; --green-dk:#163A2B; --orange:#B4400B; --ink:#1A1F1C; --muted:#4B5550;
+  --tint:#F2F6F3; --rule:#D9E0DC; --paper:#FFFFFF; --r:10px;
+  --display:'Barlow Condensed','Arial Narrow',Arial,sans-serif; --body:'Barlow',Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.55 var(--body);-webkit-text-size-adjust:100%}
+img{max-width:100%;display:block}
+a{color:var(--green)} a:hover{color:var(--green-dk)}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.05;margin:0;text-wrap:balance}
+h2{font-size:clamp(30px,4vw,40px);color:var(--green);text-transform:uppercase;letter-spacing:.02em}
+p{margin:0;text-wrap:pretty}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+section{padding:64px 0;scroll-margin-top:64px}
+.lede{color:var(--muted);margin-top:8px;max-width:62ch}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:10px 20px;border-radius:8px;font:600 17px/1 var(--body);text-decoration:none;border:2px solid transparent;cursor:pointer}
+.btn-primary{background:var(--orange);color:#fff}.btn-primary:hover{background:#963508;color:#fff}
+.btn-ghost{border-color:currentColor;color:#fff}.btn-ghost:hover{background:rgba(255,255,255,.12);color:#fff}
+:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+.skip{position:absolute;left:-999px;top:8px;background:#fff;padding:8px 12px;z-index:50}.skip:focus{left:8px}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:var(--green);color:#fff}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font:700 22px/1 var(--display);letter-spacing:.02em}
+.brand:hover{color:#fff}
+.brand small{font:600 13px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;opacity:.85}
+.nav{display:flex;gap:4px;flex-wrap:wrap}
+.nav a{color:#fff;text-decoration:none;font-weight:600;padding:10px 10px;border-radius:6px}
+.nav a:hover{background:rgba(255,255,255,.12);color:#fff}
+@media (max-width:720px){.nav .hide-sm{display:none}}
+
+/* hero */
+.hero{background:var(--green);color:#fff;padding:40px 0 56px}
+.hero h1{font-size:clamp(42px,7vw,76px)}
+.hero .sub{font-size:clamp(18px,2.2vw,22px);margin-top:12px;max-width:40ch;opacity:.95}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:36px;background:#fff;color:var(--ink);border-radius:var(--r);overflow:hidden}
+.fact{padding:18px 22px;border-right:1px solid var(--rule)}
+.fact:last-child{border-right:0}
+.fact b{display:block;font:700 30px/1.05 var(--display)}
+.fact .big{font-size:48px;color:var(--orange)}
+.fact span{color:var(--muted);font-size:15px}
+.factnote{margin-top:12px;font-size:15px;opacity:.9}
+@media (max-width:640px){.facts{grid-template-columns:1fr}.fact{border-right:0;border-bottom:1px solid var(--rule)}.fact:last-child{border-bottom:0}}
+
+/* portfolio */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:24px 0 20px}
+.chip{min-height:44px;padding:8px 16px;border-radius:999px;border:1.5px solid var(--rule);background:#fff;color:var(--ink);font:600 15px/1 var(--body);cursor:pointer}
+.chip:hover{border-color:var(--green)}
+.chip[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr));gap:24px}
+.card{border:1px solid var(--rule);border-radius:var(--r);overflow:hidden;background:#fff;display:flex;flex-direction:column}
+.card .meta{padding:16px 18px 20px;display:flex;flex-direction:column;gap:6px}
+.card h3{font-size:24px}
+.tags{display:flex;gap:8px;flex-wrap:wrap;font-size:14px;color:var(--muted)}
+.tag{background:var(--tint);color:var(--green);font-weight:600;padding:2px 10px;border-radius:999px}
+.card p{font-size:16px}
+.empty{padding:32px;border:2px dashed var(--rule);border-radius:var(--r);color:var(--muted);text-align:center}
+
+.ba{position:relative;aspect-ratio:4/3;background:#E7ECE9;overflow:hidden;--pos:50%;user-select:none}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ba .before{clip-path:inset(0 calc(100% - var(--pos)) 0 0)}
+.ba .line{position:absolute;top:0;bottom:0;left:var(--pos);width:3px;margin-left:-1.5px;background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.25);pointer-events:none}
+.ba .knob{position:absolute;top:50%;left:var(--pos);width:44px;height:44px;margin:-22px 0 0 -22px;border-radius:50%;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.3);display:grid;place-items:center;pointer-events:none;color:var(--green)}
+.ba input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:ew-resize}
+.ba:focus-within{outline:3px solid var(--orange);outline-offset:-3px}
+.lbl{position:absolute;top:10px;padding:3px 10px;border-radius:4px;background:rgba(20,25,22,.78);color:#fff;font:600 13px/1.4 var(--body);letter-spacing:.06em;text-transform:uppercase;pointer-events:none}
+.lbl.b{left:10px}.lbl.a{right:10px}
+.ph{position:absolute;inset:0;display:grid;place-items:center;font:600 16px var(--body);color:var(--muted);background:repeating-linear-gradient(45deg,#E7ECE9 0 14px,#EEF2EF 14px 28px)}
+.ph{justify-items:end;padding:0 10%}
+.ph.b{justify-items:start;background:repeating-linear-gradient(45deg,#E9E4DF 0 14px,#F1ECE7 14px 28px)}
+.ph.before{clip-path:inset(0 calc(100% - var(--pos)) 0 0)}
+
+/* services */
+.alt{background:var(--tint)}
+.two{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:40px;margin-top:28px;align-items:start}
+@media (max-width:860px){.two{grid-template-columns:1fr}}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:var(--r);overflow:hidden}
+th,td{padding:11px 16px;text-align:left;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border-bottom:2px solid var(--green)}
+td:last-child,th:last-child{text-align:right;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+.note{font-size:15px;color:var(--muted);margin-top:10px}
+.plans{display:flex;flex-direction:column;gap:16px}
+.plan{background:#fff;border:1px solid var(--rule);border-radius:var(--r);padding:20px 22px}
+.plan.feat{border:2px solid var(--green)}
+.plan header{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.plan h3{font-size:28px}
+.price{font:700 28px/1 var(--display);color:var(--orange)}
+.price small{font:500 15px var(--body);color:var(--muted)}
+.plan .sub{color:var(--muted);font-size:15px;margin:4px 0 8px}
+.plan ul{margin:0;padding-left:20px}
+.plan li{margin:3px 0}
+.seasons{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:24px}
+@media (max-width:860px){.seasons{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:480px){.seasons{grid-template-columns:1fr}}
+.season{background:#fff;border-radius:var(--r);padding:18px 20px;border:1px solid var(--rule)}
+.season h3{font-size:24px;margin-bottom:6px}
+.season ul{margin:0;padding-left:20px;font-size:16px}
+
+/* area + contact */
+.area{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:20px;max-width:640px}
+.area div{border-left:0;background:var(--tint);border-radius:var(--r);padding:16px 20px}
+.area b{font:700 24px var(--display);display:block}
+.contact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:40px;margin-top:28px}
+@media (max-width:860px){.contact{grid-template-columns:1fr}}
+.reach{display:flex;flex-direction:column;gap:14px}
+.reach .phone{font:700 clamp(32px,4.5vw,44px)/1 var(--display);color:var(--ink);text-decoration:none}
+.reach .phone:hover{color:var(--green)}
+form{display:grid;gap:14px;background:var(--tint);padding:24px;border-radius:var(--r)}
+label{display:grid;gap:6px;font-weight:600;font-size:15px}
+input,select,textarea{font:400 17px var(--body);padding:11px 12px;border:1.5px solid #B9C4BE;border-radius:8px;background:#fff;color:var(--ink);width:100%}
+textarea{min-height:120px;resize:vertical}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:520px){.row2{grid-template-columns:1fr}}
+.hint{font-size:14px;color:var(--muted)}
+footer{background:var(--green);color:#fff;padding:28px 0;font-size:15px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{color:#fff}footer a:hover{color:#fff}
+</style>
+</head>
+<body>
+<a class="skip" href="#work">Skip to our work</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Out of Ideas Home, back to top">
+      <svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 16 16 6l11 10v11H5z" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round"/><path d="M13 27v-7h6v7" fill="none" stroke="#fff" stroke-width="2.6"/></svg>
+      <span>Out of Ideas <small>Home</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#work">Our work</a>
+      <a href="#services" class="hide-sm">Services</a>
+      <a href="#plans" class="hide-sm">Plans</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <h1>Home Maintenance &amp; Handyman</h1>
+    <p class="sub">The small jobs on your list, handled in one visit. Serving Herndon, Reston, Sterling and Ashburn.</p>
+    <div class="ctas">
+      <a class="btn btn-primary" href="tel:+17034525243">Call (703) 452-5243</a>
+      <a class="btn btn-ghost" href="sms:+17034525243">Text us</a>
+      <a class="btn btn-ghost" href="#contact">Request a quote</a>
+    </div>
+    <div class="facts">
+      <div class="fact"><b class="big">$95</b><span>per hour</span></div>
+      <div class="fact"><b>2-hour minimum</b><span>$190 per visit, labor</span></div>
+      <div class="fact"><b>After 2 hours</b><span>billed in 30-minute steps</span></div>
+    </div>
+    <p class="factnote">No trip charge in Fairfax or Loudoun · Evenings &amp; weekends $115/hr · Parts at cost + 20%, or supply your own</p>
+  </div>
+</div>
+
+<section id="work">
+  <div class="wrap">
+    <h2>Before &amp; after</h2>
+    <p class="lede">Drag the slider on any photo to compare before and after.</p>
+    <div class="filters" id="filters" role="group" aria-label="Filter by type of job"></div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section id="services" class="alt">
+  <div class="wrap">
+    <h2>Common jobs</h2>
+    <p class="lede">Typical time on site. Mix and match: anything that fits in your 2 hours is $190.</p>
+    <div class="two">
+      <div>
+        <table>
+          <thead><tr><th scope="col">Job</th><th scope="col">Typical time</th></tr></thead>
+          <tbody>
+            <tr><td>Furnace / HVAC filters (up to 4)</td><td>15–30 min</td></tr>
+            <tr><td>Garbage disposal replacement</td><td>1–1.5 hr + unit</td></tr>
+            <tr><td>Leaky faucet repair or cartridge</td><td>1–2 hr + parts</td></tr>
+            <tr><td>Running toilet: flapper or fill valve</td><td>30–45 min</td></tr>
+            <tr><td>Hang pictures, mirrors, shelves</td><td>~15 min each</td></tr>
+            <tr><td>Arrange or move furniture in-home</td><td>by the hour</td></tr>
+            <tr><td>Re-caulk tub, shower or sink</td><td>1–2 hr</td></tr>
+            <tr><td>Smoke &amp; CO detectors: test, batteries</td><td>20–40 min</td></tr>
+            <tr><td>Small drywall patches</td><td>1–2 hr</td></tr>
+            <tr><td>Sticking doors, latches, hinges</td><td>30–60 min</td></tr>
+            <tr><td>Weatherstripping &amp; door sweeps</td><td>30–60 min</td></tr>
+            <tr><td>High-ceiling bulbs, hard-to-reach fixes</td><td>15–30 min</td></tr>
+          </tbody>
+        </table>
+        <p class="note">Don't see your job? Ask. If it's on your list, we can probably do it.</p>
+      </div>
+      <div class="plans" id="plans">
+        <h2 style="font-size:32px">Maintenance plans</h2>
+        <article class="plan">
+          <header><h3>Seasonal</h3><span class="price">$175 <small>/ visit</small></span></header>
+          <p class="sub">4 visits a year · 2 hours each</p>
+          <ul><li>Filters changed every visit</li><li>Full seasonal checklist</li><li>Short written notes on what we found</li></ul>
+        </article>
+        <article class="plan feat">
+          <header><h3>Monthly</h3><span class="price">$165 <small>/ visit</small></span></header>
+          <p class="sub">12 visits a year · 2 hours each</p>
+          <ul><li>Everything in Seasonal</li><li>Your to-do list worked down monthly</li><li>Repair calls booked within 48 hours</li><li>Extra hours at $85/hr</li></ul>
+        </article>
+        <p class="note">Billed per visit. Cancel anytime with 30 days’ notice. Filters and parts billed separately.</p>
+      </div>
+    </div>
+
+    <h2 style="margin-top:56px;font-size:32px">What we check each season</h2>
+    <div class="seasons">
+      <div class="season"><h3>Spring</h3><ul><li>Outdoor faucets back on</li><li>Rinse AC condenser</li><li>Screens on, windows checked</li><li>Exterior caulk touch-up</li></ul></div>
+      <div class="season"><h3>Summer</h3><ul><li>Clean dryer vent</li><li>Tighten deck &amp; stair rails</li><li>Lube garage door</li><li>Check under sinks for leaks</li></ul></div>
+      <div class="season"><h3>Fall</h3><ul><li>Shut off &amp; drain hose bibs</li><li>Weatherstrip doors</li><li>Test smoke &amp; CO alarms</li><li>Reverse ceiling fans</li></ul></div>
+      <div class="season"><h3>Winter</h3><ul><li>Find &amp; seal drafts</li><li>Hang or take down lights</li><li>Test sump pump</li><li>Indoor punch-list repairs</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Get on the schedule</h2>
+    <div class="area" aria-label="Service area">
+      <div><b>Fairfax County</b>Herndon · Reston</div>
+      <div><b>Loudoun County</b>Sterling · Ashburn</div>
+    </div>
+    <div class="contact">
+      <div class="reach">
+        <p>Call or text</p>
+        <a class="phone" href="tel:+17034525243">(703) 452-5243</a>
+        <p><a href="mailto:contact@outofideas.org">contact@outofideas.org</a></p>
+        <p class="hint">We accept cash, check, card, Apple Pay and Google Pay.</p>
+      </div>
+      <form id="quote" novalidate>
+        <div class="row2">
+          <label>Your name<input name="name" autocomplete="name" required></label>
+          <label>Phone<input name="phone" type="tel" autocomplete="tel"></label>
+        </div>
+        <label>Town
+          <select name="town">
+            <option>Herndon</option><option>Reston</option><option>Sterling</option><option>Ashburn</option><option>Other (tell us below)</option>
+          </select>
+        </label>
+        <label>What's on your list?<textarea name="job" required placeholder="e.g. Replace garbage disposal, hang 3 pictures, fix a dripping tub faucet"></textarea></label>
+        <button class="btn btn-primary" type="submit">Send request</button>
+        <p class="hint">This opens your email app with your request filled in. Photos of the job help us quote. Attach them before you send.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr">2026</span> Out of Ideas · home.outofideas.org</span>
+    <span><a href="tel:+17034525243">(703) 452-5243</a> · <a href="mailto:contact@outofideas.org">contact@outofideas.org</a></span>
+  </div>
+</footer>
+
+<script>
+/* =====================================================================
+   YOUR PORTFOLIO: add, edit or remove jobs here.
+   - Put photos in the "images" folder next to this file.
+   - "before" is optional. Leave it out to show a single photo.
+   - "category" creates the filter buttons automatically.
+   - Newest jobs first: the page shows them in this order.
+   ===================================================================== */
+const PROJECTS = [
+  {
+    title: "Kitchen faucet replaced",
+    category: "Plumbing",
+    location: "Reston",
+    date: "2026-10",
+    description: "EXAMPLE: replace with your own job. Old faucet dripped at the base; installed a new single-handle pull-down and new supply lines.",
+    before: "images/faucet-before.jpg",
+    after:  "images/faucet-after.jpg"
+  },
+  {
+    title: "Gallery wall in the stairwell",
+    category: "Pictures & décor",
+    location: "Ashburn",
+    date: "2026-09",
+    description: "EXAMPLE: replace with your own job. Laid out and hung 11 frames, leveled and anchored into studs where possible.",
+    before: "images/gallery-before.jpg",
+    after:  "images/gallery-after.jpg"
+  },
+  {
+    title: "Drywall patch after a plumbing repair",
+    category: "Drywall & paint",
+    location: "Herndon",
+    date: "2026-08",
+    description: "EXAMPLE: replace with your own job. Patched a 14-inch access hole, textured to match and painted.",
+    before: "images/drywall-before.jpg",
+    after:  "images/drywall-after.jpg"
+  }
+];
+/* ===================== end of portfolio list ===================== */
+
+(function () {
+  const grid = document.getElementById('grid');
+  const filters = document.getElementById('filters');
+  const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
+  const fmtDate = (d) => { const m = /^(\d{4})-(\d{2})/.exec(d || ''); return m ? MONTHS[+m[2] - 1] + ' ' + m[1] : (d || ''); };
+
+  function photo(src, alt, side) {
+    const wrap = document.createDocumentFragment();
+    const ph = el('div', 'ph' + (side === 'before' ? ' b before' : ''), side === 'before' ? 'Before photo' : 'After photo');
+    ph.setAttribute('aria-hidden', 'true');
+    wrap.appendChild(ph);
+    if (src) {
+      const img = el('img', side === 'before' ? 'before' : '');
+      img.src = src; img.alt = alt; img.loading = 'lazy'; img.decoding = 'async';
+      img.addEventListener('error', () => img.remove());
+      wrap.appendChild(img);
+    }
+    return wrap;
+  }
+
+  function slider(p) {
+    const box = el('div', 'ba');
+    box.appendChild(photo(p.after, 'After: ' + p.title, 'after'));
+    if (!p.before) return box;
+    box.appendChild(photo(p.before, 'Before: ' + p.title, 'before'));
+    box.appendChild(el('span', 'lbl b', 'Before'));
+    box.appendChild(el('span', 'lbl a', 'After'));
+    box.appendChild(el('span', 'line'));
+    const knob = el('span', 'knob');
+    knob.innerHTML = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg>';
+    box.appendChild(knob);
+    const range = el('input');
+    range.type = 'range'; range.min = 0; range.max = 100; range.value = 50;
+    range.setAttribute('aria-label', 'Compare before and after: ' + p.title);
+    range.addEventListener('input', () => box.style.setProperty('--pos', range.value + '%'));
+    box.appendChild(range);
+    return box;
+  }
+
+  function card(p) {
+    const c = el('article', 'card');
+    c.appendChild(slider(p));
+    const m = el('div', 'meta');
+    m.appendChild(el('h3', '', p.title));
+    const tags = el('div', 'tags');
+    if (p.category) tags.appendChild(el('span', 'tag', p.category));
+    const where = [p.location, fmtDate(p.date)].filter(Boolean).join(' · ');
+    if (where) tags.appendChild(el('span', '', where));
+    m.appendChild(tags);
+    if (p.description) m.appendChild(el('p', '', p.description));
+    c.appendChild(m);
+    return c;
+  }
+
+  let current = 'All';
+  function render() {
+    grid.replaceChildren();
+    const list = PROJECTS.filter((p) => current === 'All' || p.category === current);
+    if (!list.length) { grid.appendChild(el('div', 'empty', 'New projects coming soon.')); return; }
+    list.forEach((p) => grid.appendChild(card(p)));
+  }
+
+  const cats = ['All', ...new Set(PROJECTS.map((p) => p.category).filter(Boolean))];
+  if (cats.length > 2) {
+    cats.forEach((c) => {
+      const b = el('button', 'chip', c);
+      b.type = 'button';
+      b.setAttribute('aria-pressed', c === current ? 'true' : 'false');
+      b.addEventListener('click', () => {
+        current = c;
+        filters.querySelectorAll('.chip').forEach((x) => x.setAttribute('aria-pressed', x.textContent === c ? 'true' : 'false'));
+        render();
+      });
+      filters.appendChild(b);
+    });
+  } else { filters.hidden = true; }
+  render();
+
+  document.getElementById('quote').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const f = e.target;
+    if (!f.name.value.trim() || !f.job.value.trim()) { (f.name.value.trim() ? f.job : f.name).focus(); return; }
+    const body = 'Name: ' + f.name.value + '\nPhone: ' + f.phone.value + '\nTown: ' + f.town.value + '\n\nJob(s):\n' + f.job.value + '\n';
+    location.href = 'mailto:contact@outofideas.org?subject=' + encodeURIComponent('Quote request: ' + f.town.value) + '&body=' + encodeURIComponent(body);
+  });
+
+  document.getElementById('yr').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
